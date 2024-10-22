@@ -1,0 +1,17 @@
+.display-options {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .display-options button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #f5f5f5;
+    cursor: pointer;
+  }
+  
+  .display-options button:hover {
+    background-color: #ddd;
+  }
+  

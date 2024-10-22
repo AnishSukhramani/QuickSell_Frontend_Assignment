@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.app-container {
+  padding: 15px; /* Reduced padding for the container */
+  font-family: Arial, sans-serif;
+  background-color: white; /* Set the background to white */
+  color: black; /* Text color black */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px; /* Reduced margin for the header */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.display-button {
+  padding: 6px 10px; /* Adjusted padding for a sleeker appearance */
+  font-size: 12px; /* Reduced font size for a more classy look */
+  background-color: white; /* Set background to white */
+  color: black; /* Set text color to blue */
+  border: 1px solid black; /* Added border to match text color */
+  border-radius: 5px; /* Keep the rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.display-button:hover {
+  background-color: white; /* Change background to blue on hover */
+  color: white; /* Change text color to white on hover */
+}
+
+.menu {
+  display: flex;
+  gap: 15px; /* Reduced gap between menu items */
+  margin-left: 10px;
+}
+
+.menu-grouping,
+.menu-ordering {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  padding: 6px; /* Reduced padding for select elements */
+  font-size: 12px; /* Reduced font size for select elements */
+  border-radius: 4px; /* Rounded corners for select elements */
+  border: 1px solid #ccc; /* Light gray border for select elements */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.kanban-board {
+  display: flex;
+  justify-content: center; /* Center align all columns */
+  gap: 15px; /* Reduced gap between columns */
+  flex-wrap: wrap; /* Allow columns to wrap for responsiveness */
+}
+
+.kanban-column {
+  background-color: #f4f4f4; /* Light gray for columns */
+  padding: 8px; /* Reduced padding for columns */
+  border-radius: 8px;
+  flex: 1 1 150px; /* Adjusted to make columns smaller */
+  min-width: 150px; /* Ensures minimum width */
+  max-width: 250px; /* Limits the maximum width for larger screens */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex; /* Use flexbox for the column to center content */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center align children */
+}
+
+.kanban-column h2 {
+  font-size: 16px; /* Reduced header font size */
+  margin-bottom: 8px; /* Reduced margin for headers */
+  color: black; /* Header color */
+  text-align: center; /* Center-align headers */
+}
+
+.kanban-card {
+  background-color: white; /* White background for cards */
+  padding: 8px; /* Reduced padding for cards */
+  border: 1px solid #ddd; /* Light border */
+  margin-bottom: 8px; /* Reduced bottom margin */
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.2s; /* Smooth transform effect */
+  width: 100%; /* Make cards take the full width of the column */
+}
+
+.kanban-card:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+p {
+  margin: 4px 0; /* Reduced margin for paragraph text */
+  font-size: 12px; /* Reduced font size for paragraphs */
 }
